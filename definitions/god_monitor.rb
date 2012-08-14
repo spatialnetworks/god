@@ -32,7 +32,7 @@ define :god_monitor, :config => "mongrel.god.erb", :max_memory => 100, :cpu => 5
       :sv_bin => node[:runit][:sv_bin],
       :params => params
     )
-    notifies :restart, resources(:service => "god")
+    #notifies :restart, resources(:service => "god")
   end
   
 end
